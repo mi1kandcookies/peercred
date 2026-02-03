@@ -2,6 +2,33 @@
 
 A minimal Web3 reputation app where users can issue verifiable attestations to other wallet addresses. Built on Base with Next.js frontend.
 
+## Quick Start
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/mi1kandcookies/peercred.git
+cd peercred
+
+# 2. Install dependencies
+cd frontend && npm install
+
+# 3. Set up environment (REQUIRED for wallet connection)
+cp .env.example .env.local
+# Edit .env.local and add your WalletConnect Project ID
+# Get one free at: https://cloud.walletconnect.com
+
+# 4. Run the app
+npm run dev
+# Open http://localhost:3000
+```
+
+### Required Setup Checklist
+
+- [ ] **WalletConnect Project ID** - Get from [cloud.walletconnect.com](https://cloud.walletconnect.com) (free)
+- [ ] **Deploy Contract** - See [Contract Deployment](#smart-contract-deployment) section
+- [ ] **Update Contract Address** - Edit `frontend/lib/contract.ts` with deployed address
+- [ ] **Base Sepolia ETH** - Get testnet ETH from [Base Faucet](https://www.coinbase.com/faucets/base-sepolia-faucet)
+
 ## Features
 
 - Connect wallet via RainbowKit
