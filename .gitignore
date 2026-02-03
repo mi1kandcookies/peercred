@@ -1,0 +1,30 @@
+# Dependencies
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env*.local
+
+# Build outputs
+contracts/cache/
+contracts/artifacts/
+contracts/typechain-types/
+frontend/.next/
+frontend/out/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Misc
+*.pem
+.env.production
